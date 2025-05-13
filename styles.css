@@ -1,0 +1,170 @@
+/* Основные стили */
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
+  color: white;
+  overflow-x: hidden;
+}
+
+#resume {
+  display: flex;
+  flex-direction: row;
+  max-width: 210mm;
+  min-height: 297mm;
+  margin: 20px auto;
+  background-color: #1e1e2f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10mm;
+  overflow: auto;
+}
+
+/* Левая панель (sidebar) */
+.sidebar {
+  width: 35%;
+  background-color: #4b0082;
+  padding: 15px; /* уменьшены отступы */
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.profile-photo {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px; /* уменьшены отступы */
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+.sidebar h2 {
+  font-size: 14px; /* уменьшен размер шрифта */
+  border-bottom: 1px solid #ff4785;
+  margin-top: 15px; /* уменьшен отступ сверху */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 15px; /* уменьшен отступ */
+}
+
+.sidebar li a {
+  color: #93c5fd;
+}
+
+/* Правая панель (основной контент) */
+.main {
+  width: 65%;
+  padding: 20px; /* уменьшены отступы */
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #000;
+  overflow-y: auto;
+}
+
+.main header {
+  text-align: center;
+  margin-bottom: 15px; /* уменьшены отступы */
+}
+
+.main h1 {
+  font-size: 22px; /* уменьшен размер заголовка */
+  margin-bottom: 6px; /* уменьшен отступ снизу */
+}
+
+.subtitle {
+  font-size: 14px; /* уменьшен размер шрифта */
+  color: #666;
+}
+
+.main h2 {
+  font-size: 16px; /* уменьшен размер подзаголовков */
+  color: #000;
+  border-bottom: 2px solid #ef476f;
+  padding-bottom: 4px;
+  margin-top: 15px; /* уменьшен отступ сверху */
+}
+
+/* Проектные блоки */
+.project {
+  margin-bottom: 15px; /* уменьшены отступы снизу */
+  break-inside: avoid;
+  font-size: 14px; /* уменьшен размер шрифта */
+  line-height: 1.3; /* уменьшен межстрочный интервал */
+}
+
+.project strong a {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 15px; /* уменьшен размер шрифта */
+  text-decoration: none;
+  color: #ef476f;
+}
+
+.project p {
+  margin: 3px 0; /* уменьшены отступы */
+  font-size: 12px; /* уменьшен размер текста */
+}
+
+/* Центрирование */
+.center {
+  text-align: center;
+  margin: 15px;
+}
+
+/* Кнопки */
+button {
+  padding: 8px 16px; /* уменьшены размеры кнопок */
+  font-size: 14px; /* уменьшен размер текста в кнопках */
+  background-color: #ef476f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d90429;
+}
+
+/* Печатная версия */
+@media print {
+  body {
+    margin: 0;
+    background: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    overflow: hidden;
+  }
+
+  #resume {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0;
+    box-shadow: none;
+    padding: 10mm;
+    overflow: visible !important;
+  }
+
+  .sidebar,
+  .main {
+    overflow: visible !important;
+  }
+
+  .center,
+  button,
+  .download-button {
+    display: none !important;
+  }
+
+  section,
+  .project {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+}

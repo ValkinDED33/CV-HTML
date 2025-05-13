@@ -1,12 +1,239 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ihor_Skrypka_Junior_Fullstack_Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Подключаем библиотеку html2pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div id="resume">
+      <div class="sidebar">
+        <img src="photo.jpg" alt="Profile Photo" class="profile-photo" />
+        <h2>Contacts</h2>
+        <ul>
+          <li>Phone: +48 577 829 457</li>
+          <li>
+            Email:
+            <a href="mailto:sonyierik289@gmail.com">sonyierik289@gmail.com</a>
+          </li>
+          <li>
+            Telegram: <a href="https://t.me/ValkinDED_PL">@ValkinDED_PL</a>
+          </li>
+          <!--<li>
+            LinkedIn:
+            <a href="https://linkedin.com/in/ihor-skrypka-678096359"
+              >Ihor Skrypka</a
+            >
+          </li>-->
+          <li>
+            GitHub: <a href="https://github.com/ValkinDED33">ValkinDED33</a>
+          </li>
+          <li>Location: Poland, Katowice</li>
+        </ul>
+
+        <h2>Tech Skills</h2>
+        <ul>
+          <li>Node.js</li>
+          <li>React</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>Git</li>
+          <li>Webpack</li>
+          <li>Parcel</li>
+        </ul>
+
+        <h2>Soft Skills</h2>
+        <ul>
+          <li>Problem-solving</li>
+          <li>Teamwork</li>
+          <li>Attention to detail</li>
+          <li>Adaptability</li>
+          <li>Time management</li>
+        </ul>
+
+        <h2>Languages</h2>
+        <ul>
+          <li>English: Upper-Intermediate</li>
+          <li>Polish: Intermediate</li>
+          <li>Ukrainian: Native</li>
+          <li>Russian: Native</li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <header>
+          <h1>Ihor Skrypka</h1>
+          <p class="subtitle">Junior Fullstack Developer</p>
+        </header>
+
+        <section>
+          <h2>Summary</h2>
+          <p>
+            Passionate and dedicated Junior Fullstack Developer with hands-on
+            experience in React, Node.js, MongoDB, and TypeScript. Skilled in
+            building responsive web applications and eager to learn new
+            technologies and improve coding skills.
+          </p>
+        </section>
+
+        <section class="compact-projects">
+          <h2>Project Experience</h2>
+
+          <!-- Project 1 -->
+          <div class="project">
+            <strong>
+              <a
+                href="https://goit-react-hw-07-two-beta.vercel.app/"
+                target="_blank"
+              >
+                Contact Book App (CRUD)
+              </a>
+            </strong>
+            <p><strong>Role:</strong> Fullstack Developer</p>
+            <p>
+              <strong>Technologies:</strong> React, Redux Toolkit,
+              createAsyncThunk, Vite, MockAPI
+            </p>
+            <p>
+              Contact management system with ability to add, delete and filter
+              contacts.
+            </p>
+            <p>
+              <a
+                href="https://github.com/ValkinDED33/goit-react-hw-07"
+                target="_blank"
+                >GitHub</a
+              >
+            </p>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project">
+            <strong>
+              <a
+                href="https://valkinded33.github.io/goit-js-hw-12/"
+                target="_blank"
+              >
+                Image Search App
+              </a>
+            </strong>
+            <p><strong>Role:</strong> Frontend Developer</p>
+            <p>
+              <strong>Technologies:</strong> JavaScript, Axios, SimpleLightbox,
+              iziToast, Vite
+            </p>
+            <p>
+              Web app for image search via Pixabay API with pagination and
+              lightbox.
+            </p>
+            <p>
+              <a
+                href="https://github.com/ValkinDED33/goit-js-hw-12"
+                target="_blank"
+                >GitHub</a
+              >
+            </p>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project">
+            <strong>
+              <a
+                href="https://vercel.com/valkindeds-projects/goit-react-hw-01"
+                target="_blank"
+              >
+                REST API for Contacts (Node.js + MongoDB)
+              </a>
+            </strong>
+            <p><strong>Role:</strong> Backend Developer</p>
+            <p>
+              <strong>Technologies:</strong> Node.js, Express, MongoDB, REST API
+            </p>
+            <p>
+              RESTful API with CRUD functionality for managing contact data.
+            </p>
+            <p>
+              <a
+                href="https://github.com/ValkinDED33/nodejs-hw-02"
+                target="_blank"
+                >GitHub</a
+              >
+            </p>
+          </div>
+
+          <!-- Новый проект -->
+          <div class="project">
+            <strong>
+              <a
+                href="https://goit-react-hw-07-two-beta.vercel.app/"
+                target="_blank"
+              >
+                Contact Book App (CRUD)
+              </a>
+            </strong>
+            <p><strong>Role:</strong> Fullstack Developer</p>
+            <p>
+              <strong>Technologies:</strong> React, Redux Toolkit,
+              createAsyncThunk, Vite, MockAPI
+            </p>
+            <p>
+              Contact management system with ability to add, delete and filter
+              contacts.
+            </p>
+            <p>
+              <a
+                href="https://github.com/ValkinDED33/goit-react-hw-07"
+                target="_blank"
+                >GitHub</a
+              >
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Work Experience</h2>
+          <p>
+            <strong>Junior Fullstack Developer (Internship Project)</strong>
+            (2024)
+          </p>
+          <ul>
+            <li>
+              Developed a contact management app using React, Redux Toolkit, and
+              Vite.
+            </li>
+            <li>
+              Implemented async actions with createAsyncThunk for fetching data
+              from the backend.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <strong>Junior Fullstack Developer</strong> — IT School GoIT, 2025
+            </li>
+            <li>
+              <strong>Bachelor of Computer Science</strong> — Odesa National
+              University, 2015
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- Кнопка для скачивания PDF -->
+    <div class="center">
+      <button id="downloadBtn">Download PDF</button>
+    </div>
+
+    <!-- Подключение скрипта для скачивания PDF -->
+    <script src="script.js"></script>
   </body>
 </html>
